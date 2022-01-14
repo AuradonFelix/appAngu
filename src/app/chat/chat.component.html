@@ -1,0 +1,8 @@
+<div id="chat-container">
+  <div id="chat" *ngFor="let i of tabMess">
+    <label for="de">De : {{i.user.nom}}, Le : {{i.date | date}}</label><br>
+    <label for="de" id="message">Message : </label><br>
+    <div id="text"> {{i.message}}</div><br>
+
+  </div>
+</div>

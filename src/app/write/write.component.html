@@ -1,0 +1,18 @@
+
+
+<form id="form" #monFormulaire="ngForm" (ngSubmit)="soumissionDuForm(monFormulaire.value)">
+  <h3>Ecrir un nouveau message </h3>
+
+  <label for="de" id="de">De : </label><br>
+  <input type="text" ngModel id="auteur" name="auteur"><br>
+
+  <label  id="message">Message : </label><br>
+  <textarea type="text" id="message" ngModel name="message"  class="message" rows="7" cols="100" ></textarea>
+
+  <div id="button">
+    <button type="submit" id="valider">Valider</button>
+    <button type="button" id="annuler" >Annuler</button>
+  </div>
+
+</form>
+

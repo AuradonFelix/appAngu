@@ -1,0 +1,12 @@
+<div id="talk">
+  <h4>Personnes Actives : </h4>
+ <p *ngIf="tabPers.length ===0" >AUCUNE PERSONNE EN BDD
+ </p>
+
+  <div *ngIf="tabPers.length !==0">
+   <ul *ngFor="let i of tabPers">
+         <li>{{i.prenom}} . {{i.nom}}</li>
+   </ul>
+  </div>
+
+</div>
